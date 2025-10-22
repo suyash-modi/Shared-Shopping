@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "users": {
+      "$userId": {
+        ".read": "auth != null && auth.uid == $userId",
+        ".write": "auth != null && auth.uid == $userId",
+        "lists": {
+          ".read": "auth != null && auth.uid == $userId",
+          ".write": "auth != null && auth.uid == $userId",
+          "$listId": {
+            ".read": "auth != null && auth.uid == $userId",
+            ".write": "auth != null && auth.uid == $userId",
+            "items": {
+              ".read": "auth != null && auth.uid == $userId",
+              ".write": "auth != null && auth.uid == $userId"
+            }
+          }
+        }
+      }
+    }
+  }
+}

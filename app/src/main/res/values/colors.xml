@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Primary Colors -->
+    <color name="primary">#FF2E7D32</color>
+    <color name="primary_dark">#FF1B5E20</color>
+    <color name="primary_light">#FF4CAF50</color>
+    <color name="accent">#FFFF9800</color>
+    
+    <!-- Background Colors -->
+    <color name="background">#FFF8F9FA</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="surface_variant">#FFF5F5F5</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FF212121</color>
+    <color name="text_secondary">#FF757575</color>
+    <color name="text_hint">#FFBDBDBD</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#FF4CAF50</color>
+    <color name="warning">#FFFF9800</color>
+    <color name="error">#FFF44336</color>
+    <color name="info">#FF2196F3</color>
+    
+    <!-- Card Colors -->
+    <color name="card_background">#FFFFFFFF</color>
+    <color name="card_shadow">#1A000000</color>
+    
+    <!-- Button Colors -->
+    <color name="button_primary">#FF2E7D32</color>
+    <color name="button_secondary">#FF757575</color>
+    
+    <!-- Divider -->
+    <color name="divider">#FFE0E0E0</color>
+    
+    <!-- Shopping specific colors -->
+    <color name="bought_item">#FF4CAF50</color>
+    <color name="unbought_item">#FF757575</color>
+    <color name="add_button">#FF2E7D32</color>
+    <color name="delete_button">#FFF44336</color>
+</resources>

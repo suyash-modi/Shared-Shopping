@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601346393089",
+    "project_id": "shared-shopping-48efa",
+    "storage_bucket": "shared-shopping-48efa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601346393089:android:d24b6e6073301e4ee3ac00",
+        "android_client_info": {
+          "package_name": "com.modi.sharedshopping"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGh3-eY_kiri4k_-72j88W6lI1WHwimU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

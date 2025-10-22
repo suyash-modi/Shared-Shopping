@@ -12,3 +12,4 @@ data class ShoppingList(
     val createdAt: Long = System.currentTimeMillis(),
     val lastModified: Long = System.currentTimeMillis()
 )
+

@@ -33,3 +33,4 @@ abstract class ShoppingDatabase : RoomDatabase() {
         }
     }
 }
+

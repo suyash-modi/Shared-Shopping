@@ -32,7 +32,7 @@ class ShoppingItemAdapter(
 
         fun bind(shoppingItem: ShoppingItem) {
             binding.itemNameText.text = shoppingItem.name
-            binding.quantityText.text = "Qty: ${shoppingItem.quantity}"
+            binding.quantityText.text = shoppingItem.quantity.toString()
             binding.checkBoxBought.isChecked = shoppingItem.bought
 
             // Update text appearance based on bought status
@@ -64,3 +64,4 @@ class ShoppingItemAdapter(
         }
     }
 }
+

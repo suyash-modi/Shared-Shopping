@@ -14,3 +14,4 @@ data class ShoppingItem(
     val addedBy: String,
     val timestamp: Long = System.currentTimeMillis()
 )
+

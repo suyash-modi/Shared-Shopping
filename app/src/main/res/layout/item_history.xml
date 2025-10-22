@@ -15,17 +15,15 @@
         android:padding="16dp"
         android:gravity="center_vertical">
 
-        <!-- Action Icon -->
         <ImageView
             android:id="@+id/actionIcon"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
             android:src="@drawable/ic_history"
             android:background="@drawable/circle_background"
-            android:padding="8dp"
-            android:layout_marginEnd="16dp" />
+            android:padding="10dp"
+            android:layout_marginEnd="20dp" />
 
-        <!-- History Info -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -52,14 +50,14 @@
 
         </LinearLayout>
 
-        <!-- Timestamp -->
         <TextView
             android:id="@+id/timestampText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2h ago"
             android:textSize="12sp"
-            android:textColor="@color/text_hint" />
+            android:textColor="@color/text_hint"
+            android:layout_marginStart="8dp" />
 
     </LinearLayout>
 

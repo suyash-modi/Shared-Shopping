@@ -49,3 +49,4 @@ interface ShoppingItemDao {
     @Query("DELETE FROM shopping_items WHERE listId = :listId")
     suspend fun deleteItemsByListId(listId: String)
 }
+

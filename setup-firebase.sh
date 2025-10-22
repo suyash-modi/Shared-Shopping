@@ -40,3 +40,4 @@ echo "📖 For detailed instructions, see README.md"
 echo ""
 
 echo "✅ Setup complete! Happy coding!"
+

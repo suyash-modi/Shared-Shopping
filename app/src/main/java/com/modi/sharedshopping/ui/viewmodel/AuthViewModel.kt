@@ -82,3 +82,4 @@ class AuthViewModel(private val repository: ShoppingRepository) : ViewModel() {
         _errorMessage.value = null
     }
 }
+

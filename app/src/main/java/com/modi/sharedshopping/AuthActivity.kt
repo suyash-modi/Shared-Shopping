@@ -106,3 +106,4 @@ class AuthActivity : AppCompatActivity() {
         binding.errorText.visibility = View.VISIBLE
     }
 }
+

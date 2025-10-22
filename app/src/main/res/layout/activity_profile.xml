@@ -7,7 +7,6 @@
     android:background="@color/background"
     tools:context=".ProfileActivity">
 
-    <!-- App Bar -->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,16 +16,18 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="125dp"
             android:background="@color/primary"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
             app:title="Profile"
+            app:titleMarginTop="12dp"
             app:titleTextColor="@color/white"
             app:navigationIcon="@drawable/ic_arrow_back"
             app:navigationIconTint="@color/white" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- Main Content -->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,12 +38,11 @@
             android:layout_height="wrap_content"
             android:padding="16dp">
 
-            <!-- Profile Header Card -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/profileHeaderCard"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
+                android:layout_marginBottom="32dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -57,16 +57,14 @@
                     android:padding="24dp"
                     android:gravity="center">
 
-                    <!-- Profile Avatar -->
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="88dp"
+                        android:layout_height="88dp"
                         android:src="@drawable/ic_profile"
                         android:background="@drawable/circle_background"
-                        android:padding="20dp"
-                        android:layout_marginBottom="16dp" />
+                        android:padding="22dp"
+                        android:layout_marginBottom="20dp" />
 
-                    <!-- User Name -->
                     <TextView
                         android:id="@+id/userNameText"
                         android:layout_width="wrap_content"
@@ -77,7 +75,6 @@
                         android:textColor="@color/text_primary"
                         android:layout_marginBottom="8dp" />
 
-                    <!-- User Email -->
                     <TextView
                         android:id="@+id/userEmailText"
                         android:layout_width="wrap_content"
@@ -87,7 +84,6 @@
                         android:textColor="@color/text_secondary"
                         android:layout_marginBottom="16dp" />
 
-                    <!-- Sign Out Button -->
                     <Button
                         android:id="@+id/buttonSignOut"
                         android:layout_width="wrap_content"
@@ -100,7 +96,6 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Stats Section -->
             <TextView
                 android:id="@+id/statsTitle"
                 android:layout_width="wrap_content"
@@ -113,7 +108,6 @@
                 app:layout_constraintTop_toBottomOf="@id/profileHeaderCard"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <!-- Stats Cards Row 1 -->
             <LinearLayout
                 android:id="@+id/statsRow1"
                 android:layout_width="0dp"
@@ -124,7 +118,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
 
-                <!-- Items Added Card -->
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -142,11 +135,11 @@
                         android:gravity="center">
 
                         <ImageView
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
                             android:src="@drawable/ic_add_item"
                             android:tint="@color/info"
-                            android:layout_marginBottom="8dp" />
+                            android:layout_marginBottom="12dp" />
 
                         <TextView
                             android:id="@+id/totalItemsAddedText"
@@ -170,7 +163,6 @@
 
                 </com.google.android.material.card.MaterialCardView>
 
-                <!-- Items Bought Card -->
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -188,11 +180,11 @@
                         android:gravity="center">
 
                         <ImageView
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
                             android:src="@drawable/ic_menu"
                             android:tint="@color/success"
-                            android:layout_marginBottom="8dp" />
+                            android:layout_marginBottom="12dp" />
 
                         <TextView
                             android:id="@+id/totalItemsBoughtText"
@@ -218,7 +210,6 @@
 
             </LinearLayout>
 
-            <!-- History Section -->
             <TextView
                 android:id="@+id/historyTitle"
                 android:layout_width="wrap_content"
@@ -231,7 +222,6 @@
                 app:layout_constraintTop_toBottomOf="@id/statsRow1"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <!-- History RecyclerView -->
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewHistory"
                 android:layout_width="0dp"
@@ -243,7 +233,6 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 tools:listitem="@layout/item_history" />
 
-            <!-- Empty History State -->
             <LinearLayout
                 android:id="@+id/emptyHistoryLayout"
                 android:layout_width="0dp"
@@ -287,7 +276,6 @@
 
     </androidx.core.widget.NestedScrollView>
 
-    <!-- Progress Bar -->
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"

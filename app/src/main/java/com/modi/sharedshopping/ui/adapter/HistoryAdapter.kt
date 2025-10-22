@@ -72,3 +72,4 @@ class HistoryAdapter : ListAdapter<HistoryItem, HistoryAdapter.HistoryViewHolder
         }
     }
 }
+
